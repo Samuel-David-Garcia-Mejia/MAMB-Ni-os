@@ -96,7 +96,7 @@ svg {
 }
 
 /* ── PHONE SHELL ────────────────────────────────── */
-#phone-shell {
+/* #phone-shell {
   position: relative;
   width: 390px;
   height: 844px;
@@ -119,7 +119,7 @@ svg {
   background: #111;
   border-radius: 0 0 1.5rem 1.5rem;
   z-index: 9999;
-}
+} */
 
 /* ── APP / SCREEN SYSTEM ───────────────────────── */
 #app {
