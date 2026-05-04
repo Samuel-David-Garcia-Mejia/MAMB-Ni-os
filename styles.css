@@ -96,30 +96,19 @@ svg {
 }
 
 /* ── PHONE SHELL ────────────────────────────────── */
-/* #phone-shell {
+#phone-shell {
   position: relative;
   width: 390px;
   height: 844px;
   background: var(--bg);
-  border-radius: 2.75rem;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow:
-    0 0 0 10px #111,
-    0 40px 100px rgba(0, 0, 0, .55),
-    inset 0 0 0 1px rgba(255, 255, 255, .12);
+  box-shadow: none
 }
 
 #notch {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 126px;
-  height: 30px;
-  background: #111;
-  border-radius: 0 0 1.5rem 1.5rem;
-  z-index: 9999;
-} */
+  display: none;
+}
 
 /* ── APP / SCREEN SYSTEM ───────────────────────── */
 #app {
@@ -129,7 +118,8 @@ svg {
   max-width: 500px;
   overflow: hidden;
   background: var(--bg);
-  box-shadow: 0 0 30px rgba(0,0,0,0.1); /* Adds a shadow for desktop view */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  /* Adds a shadow for desktop view */
 }
 
 .screen {
