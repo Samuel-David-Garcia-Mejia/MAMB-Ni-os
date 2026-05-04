@@ -124,9 +124,12 @@ svg {
 /* ── APP / SCREEN SYSTEM ───────────────────────── */
 #app {
   position: relative;
-  width: 390px;
-  height: 844px;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 500px;
   overflow: hidden;
+  background: var(--bg);
+  box-shadow: 0 0 30px rgba(0,0,0,0.1); /* Adds a shadow for desktop view */
 }
 
 .screen {
@@ -135,7 +138,8 @@ svg {
   display: none;
   flex-direction: column;
   background: var(--bg);
-  padding-top: 30px;
+  padding-top: max(20px, env(safe-area-inset-top));
+  padding-bottom: env(safe-area-inset-bottom);
   /* notch clearance */
   will-change: transform;
 }
